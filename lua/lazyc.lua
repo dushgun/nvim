@@ -18,14 +18,4 @@ require("lazy").setup({
 	checker = { enabled = false },
 	{ "folke/neoconf.nvim", cmd = "Neoconf" },
 	"folke/neodev.nvim",
-	{
-		"ellisonleao/gruvbox.nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			require("gruvbox").setup({})
-
-			vim.cmd("colorscheme gruvbox")
-		end,
-	},
 })

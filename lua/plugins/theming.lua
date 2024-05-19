@@ -1,11 +1,19 @@
 return {
 	{
+		"ellisonleao/gruvbox.nvim",
+		lazy = false,
+		config = function()
+			require("gruvbox").setup({})
+			vim.cmd("colorscheme gruvbox")
+		end,
+	},
+	{
 		"nvim-lualine/lualine.nvim",
-		options = { theme = "gruvbox" },
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 		opts = {
 			options = {
-				icons_enabled = false,
+				theme = "gruvbox",
+				icons_enabled = true,
 				component_separators = "|",
 				section_separators = "",
 			},

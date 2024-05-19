@@ -35,6 +35,5 @@ vim.opt.clipboard = { "unnamed", "unnamedplus" }
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append({ "r" })
-vim.wo.fillchars = "eob: "
 vim.o.signcolumn = "no"
 vim.opt.swapfile = false
